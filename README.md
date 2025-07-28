@@ -10,4 +10,5 @@
 - Creates Github repos for all three workspaces
   - dev and cli will use the same repo. cli will be in the cli branch.
   - prod will have it's own repo
-    -Ouputs will
+  - Repos will include boilerplate code that can be used for examples
+- Outputs will show the user how to access the workspaces
