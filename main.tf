@@ -3,11 +3,7 @@ provider "tfe" {
   hostname = "app.terraform.io"
   token    = var.token
 }
-data "tfe_organization" "org" {
-  name = var.organization_name
-}
 
-data "tfe_project" "project" {
-  name        = var.project_name
-  organization = data.tfe_organization.org.name
+provider "github" {
+  token = var.gh_token
 }

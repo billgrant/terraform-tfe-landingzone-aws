@@ -9,4 +9,5 @@
   - prod (VSC)
 - Creates Github repos for all three workspaces
   - dev and cli will use the same repo. cli will be in the cli branch.
-  - prod will have it's
+  - prod will have it's own repo
+    -Ouputs will
