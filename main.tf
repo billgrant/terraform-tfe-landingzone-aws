@@ -7,3 +7,5 @@ provider "tfe" {
 provider "github" {
   token = var.gh_token
 }
+
+# provider "vault" {}

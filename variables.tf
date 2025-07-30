@@ -1,11 +1,13 @@
 variable "token" {
   description = "TFE/HCPT API token"
   type        = string
+  default     = ""
 }
 
 variable "organization_name" {
   description = "The name of the TFE/HCPT organization"
   type        = string
+  default = ""
 }
 
 variable "project_name" {
@@ -21,11 +23,13 @@ variable "service_name" {
 variable "gh_token" {
   description = "GitHub API token"
   type        = string
+  default     = ""
 }
 
 variable "gh_owner" {
   description = "GitHub owner for the repository"
   type        = string
+  default     = ""
 }
 
 variable "gh_template_repository" {
