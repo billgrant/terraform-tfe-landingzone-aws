@@ -1,5 +1,5 @@
 output "cli_workspace" {
-  value = tfe_workspace.cli.name
+  value = "https://app.terraform.io/app/${data.tfe_organization.org.name}/workspaces/${tfe_workspace.cli.name}"
 }
 
 output "cli_branch" {
@@ -7,7 +7,7 @@ output "cli_branch" {
 }
 
 output "development_workspace" {
-  value = tfe_workspace.development.name
+  value = "https://app.terraform.io/app/${data.tfe_organization.org.name}/workspaces/${tfe_workspace.development.name}"
 }
 
 output "development_repository" {
@@ -15,10 +15,19 @@ output "development_repository" {
 }
 
 output "production_workspace" {
-  value = tfe_workspace.production.name
+  value = "https://app.terraform.io/app/${data.tfe_organization.org.name}/workspaces/${tfe_workspace.production.name}"
 }
 
 output "production_repository" {
   value = github_repository.production.html_url
 }
 
+# output "cli_workspace" {
+#   description = "See the repository readme for setup instructions"
+#     value = {
+#      workspace_name = tfe_workspace.cli.name
+#      workspace_url  = "https://app.terraform.io/app/${data.tfe_organization.org.name}/workspaces/${tfe_workspace.cli.name}"
+#      repository     = github_repository.development.full_name
+#      branch        = "${github_repository.development.html_url}/tree/${github_branch.cli.branch}"
+#     }
+#   }
