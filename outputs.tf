@@ -10,6 +10,10 @@ output "development_workspace" {
   value = "https://app.terraform.io/app/${data.tfe_organization.org.name}/workspaces/${tfe_workspace.development.name}"
 }
 
+output "development_clone_url" {
+  value = github_repository.development.ssh_clone_url
+}
+
 output "development_repository" {
   value = github_repository.development.html_url
 }
@@ -20,6 +24,11 @@ output "production_workspace" {
 
 output "production_repository" {
   value = github_repository.production.html_url
+}
+
+output "production_clone_url" {
+  value = github_repository.production.ssh_clone_url
+  
 }
 
 # output "cli_workspace" {
