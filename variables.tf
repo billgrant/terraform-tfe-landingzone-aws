@@ -7,7 +7,7 @@ variable "token" {
 variable "organization_name" {
   description = "The name of the TFE/HCPT organization"
   type        = string
-  default = ""
+  default     = ""
 }
 
 variable "project_name" {

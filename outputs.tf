@@ -28,7 +28,7 @@ output "production_repository" {
 
 output "production_clone_url" {
   value = github_repository.production.ssh_clone_url
-  
+
 }
 
 # output "cli_workspace" {

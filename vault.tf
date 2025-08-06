@@ -1,4 +1,4 @@
-# ephemeral "vault_kv_secret_v2" "hctptoken" {
-#   mount = "hcpt/terraform"
-#   name  = "token"
-# }
+ephemeral "vault_kv_secret_v2" "githubtoken" {
+  mount = "kv"
+  name  = "github"
+}
